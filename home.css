@@ -78,14 +78,26 @@ nav {
 .nav-links a:hover {
     color: var(--primary);
 }
+.research-option{
+    border: none;
+    outline: none ;
+    cursor: pointer;
+    width: 200px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--charcoal);
+
+}
 
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 110vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
@@ -125,6 +137,14 @@ nav {
     background-color: #d35400;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.hero-text{
+    margin-top: 5rem;
+    text-align: center;
+    width: 50%;
+}
+.hero-span {
+    font-size: 20px;
 }
 
 /* Mission Section */

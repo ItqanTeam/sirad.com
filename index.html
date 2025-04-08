@@ -17,7 +17,14 @@
                 <div class="nav-links">
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
-                    <a href="#">Research</a>
+                    <select id="researchDropdown" class="research-option">
+                        <option value="" selected disabled>Select a service...</option>
+                        <option value="research/research-and-consultancy.html">Research and Consultancy</option>
+                        <option value="research/survey-assessments.html">Survey and Assessments</option>
+                        <option value="research/private-sector-development.html">Private Sector Development</option>
+                        <option value="research/digital-transformation.html">Digital Transformation</option>
+                        <option value="research/research-tools.html">Research Tools</option>
+                    </select>
                     <a href="contact.html">Contact</a>
                 </div>
             </nav>
@@ -31,6 +38,7 @@
             <p>Empowering communities to engineer peace through evidence-based research and inclusive development strategies.</p>
             <a href="#" class="btn">Explore Our Work</a>
         </div>
+        <div class="hero-text"><span class="hero-span">The SIRAD Institute for Research and Development (SIRAD)</span> is a leading civil society organization in Ethiopia dedicated to uniting communities to develop and implement sustainable, evidence-based solutions for peace, social cohesion, Capacity building and empowering women and youth for inclusive development. In addition to its peacebuilding efforts, SIRAD also operates as a research consultant firm and policy advisory institute.</div>
     </section>
 
     <!-- Mission Section -->
@@ -40,7 +48,7 @@
                 <h2>Our Mission</h2>
                 <p>We unite communities in developing sustainable solutions that promote peace, human rights, and social cohesion while serving as a leading research and policy advisory institute.</p>
             </div>
-            <div class="mission-content">
+            <!-- <!-- <div class="mission-content">
                 <div class="mission-text">
                     <h3>Building Peace from the Ground Up</h3>
                     <p>SIRAD bridges the gap between grassroots knowledge and policy-making. We don't just study conflict - we equip Ethiopians with the tools to solve it through:</p>
@@ -55,9 +63,9 @@
                 <div class="mission-image">
                     <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Community meeting">
                 </div>
-            </div>
+            <!-- </div> -->
 
-            <div class="section-title sectionTwo">
+            <div class="section-title sectionTwo"> 
                 <h2>Our Vission</h2>
                 <p>We unite communities in developing sustainable solutions that promote peace, human rights, and social cohesion while serving as a leading research and policy advisory institute.</p>
             </div>
@@ -75,7 +83,7 @@
                         <li>Capacity building for sustainable impact</li>
                     </ul>
                     <a href="about.html" class="btn" style="margin-top: 1.5rem;">Learn About Our Approach</a>
-                </div>
+                </div> 
             </div>
         </div>
     </section>
@@ -161,6 +169,12 @@
             menuToggle.addEventListener('click', function() {
                 navLinks.classList.toggle('active');
             });
+            
+        document.getElementById('researchDropdown').addEventListener('change', function() {
+            if (this.value) {
+                window.location.href = this.value;
+            }
+        });
     </script>
 </body>
 </html>
