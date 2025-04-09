@@ -19,8 +19,8 @@
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <select id="researchDropdown" class="research-option">
-                        <option value="" selected disabled>Select a service...</option>
-                        <option value="research/research-and-consultancy.html">Research and Consultancy</option>
+                        <option value="" disabled selected>Research</option>
+                        <option value="research/research-and-consultancy.html" >Research and Consultancy</option>
                         <option value="research/survey-assessments.html">Survey and Assessments</option>
                         <option value="research/private-sector-development.html">Private Sector Development</option>
                         <option value="research/digital-transformation.html">Digital Transformation</option>
@@ -160,8 +160,17 @@
             
             menuToggle.addEventListener('click', function() {
                 navLinks.classList.toggle('active');
+                document.getElementById('researchDropdown').addEventListener('change', function() {
+    if (this.value) {
+        console.log(this.value);
+        window.location.href = this.value;
+        console.log('Redirecting to:', this.value);
+    }
+});
             });
     </script>
-    <script src="/research/research.js"></script>
+    <script src="/research/js/loader-footer.js"></script>
+    <script src="/research/js/loader-header.js"></script>
+    <script src="/research/js/research.js"></script>
 </body>
 </html>
