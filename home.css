@@ -206,6 +206,17 @@ nav {
     height: auto;
     display: block;
 }
+.map{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+
+}
+.map img{
+    width: 80%;
+    height: 100%;
+    
+}
 
 /* Values Section */
 .values {

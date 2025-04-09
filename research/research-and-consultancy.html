@@ -3,69 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research and Consultancy</title>
-    <link rel="stylesheet" href="research.css">
-   <style>
-     body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-    }
-    header, footer {
-        background-color: #f8f9fa;
-        padding: 20px;
-        text-align: center;
-    }
-    main {
-        padding: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-   </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="/research/research.css">
 </head>
 <body>
-    <header>
+      <!-- Footer -->
+      <footer>
         <div class="container">
-            <nav>
-                <div class="logo">SIRAD<span>Institute</span></div>
-                <div class="menu-toggle">☰</div>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <select id="researchDropdown" class="research-option">
-                        <option value="" selected disabled>Select a service...</option>
-                        <option value="research/research-and-consultancy.html">Research and Consultancy</option>
-                        <option value="research/survey-assessments.html">Survey and Assessments</option>
-                        <option value="research/private-sector-development.html">Private Sector Development</option>
-                        <option value="research/digital-transformation.html">Digital Transformation</option>
-                        <option value="research/research-tools.html">Research Tools</option>
-                    </select>
-                    <a href="contact.html">Contact</a>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>SIRAD Institute</h3>
+                    <p>Uniting communities to develop sustainable solutions for peace and inclusive development.</p>
                 </div>
-            </nav>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Addis Ababa, Ethiopia</li>
+                        <li>info@sirad.org</li>
+                        <li>+251 123 456 789</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 SIRAD Institute for Research and Development. All rights reserved.</p>
+            </div>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Local Wisdom, Global Impact</h1>
-            <p>Empowering communities to engineer peace through evidence-based research and inclusive development strategies.</p>
-            <a href="#" class="btn">Explore Our Work</a>
-        </div>
-        <div class="hero-text"><span class="hero-span">The SIRAD Institute for Research and Development (SIRAD)</span> is a leading civil society organization in Ethiopia dedicated to uniting communities to develop and implement sustainable, evidence-based solutions for peace, social cohesion, Capacity building and empowering women and youth for inclusive development. In addition to its peacebuilding efforts, SIRAD also operates as a research consultant firm and policy advisory institute.</div>
-    </section>
+    </footer>
 </body>
-<script>
-      document.getElementById('researchDropdown').addEventListener('change', function() {
-            if (this.value) {
-                window.location.href = this.value;
-            }
-        });
-</script>
+<script src="/research/research.js"></script>
 </html>
