@@ -100,7 +100,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/WhatsApp\ Image\ 2025-04-07\ at\ 4.10.34\ PM.jpeg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/partners-img/WhatsApp\ Image\ .jpeg') no-repeat center center/cover;
     background-size: cover;
     background-position: center;
     height: 110vh;
@@ -111,6 +111,7 @@ nav {
     color: white;
     text-align: center;
     padding-top: 80px;
+    opacity: 0.9;
 }
 
 .hero-content {
