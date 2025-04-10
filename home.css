@@ -100,7 +100,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/WhatsApp\ Image\ 2025-04-07\ at\ 4.10.34\ PM.jpeg') no-repeat center center/cover;
     background-size: cover;
     background-position: center;
     height: 110vh;
