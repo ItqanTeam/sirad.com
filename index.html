@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIRAD | Empowering Communities to Engineer Peace</title>
-    <link rel="stylesheet" href="/home.css">
-    
-  
+    <!-- Changed to relative path -->
+    <link rel="stylesheet" href="home.css">
+    <!-- Added base href for GitHub Pages -->
+    <base href="https://itqanteam.github.io/sirad.com/">
 </head>
 <body>
     <!-- Header -->
@@ -19,20 +20,20 @@
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <select id="researchDropdown" class="research-option" onchange="this.value && (window.location = this.value);">
-                        <option value="/research/research-and-consultancy.html" disabled selected>Research</option>
+                        <option value="research/research-and-consultancy.html" disabled selected>Research</option>
                         <option value="research/research-and-consultancy.html">Research and Consultancy</option>
-                        <option value="/research/survey-assessments.html">Survey and Assessments</option>
-                        <option value="/research/private-sector-development.html">Private Sector Development</option>
-                        <option value="/research/digital-transformation.html">Digital Transformation</option>
-                        <option value="/research/research-tools.html">Research Tools</option>
+                        <option value="research/survey-assessments.html">Survey and Assessments</option>
+                        <option value="research/private-sector-development.html">Private Sector Development</option>
+                        <option value="research/digital-transformation.html">Digital Transformation</option>
+                        <option value="research/research-tools.html">Research Tools</option>
                     </select>
                     <select id="capacityDropdown" class="capacity-option" onchange="this.value && (window.location = this.value);">
-                        <option value="/capacity/Capacity Building.html" disabled selected>Capacity Building</option>
-                        <option value="/capacity/Capacity Building.html">Capacity Building</option>
-                        <option value="/capacity/training-conflict-resolution-peacebuilding.html">Training for conflict resolution and peacebuilding</option>
-                        <option value="/capacity/Woman.html">Women and youth empowerment</option>
-                        <option value="/capacity/skill-development-new-technology.html">Skill development for new technology</option>
-                        <option value="/capacity/facilitation.html">Facilitation</option>
+                        <option value="capacity/Capacity%20Building.html" disabled selected>Capacity Building</option>
+                        <option value="capacity/Capacity%20Building.html">Capacity Building</option>
+                        <option value="capacity/training-conflict-resolution-peacebuilding.html">Training for conflict resolution and peacebuilding</option>
+                        <option value="capacity/Woman.html">Women and youth empowerment</option>
+                        <option value="capacity/skill-development-new-technology.html">Skill development for new technology</option>
+                        <option value="capacity/facilitation.html">Facilitation</option>
                     </select>
                     <a href="contact.html">Contact</a>
                 </div>
@@ -84,7 +85,8 @@
     <section>
         <div class="map">
             <h2>Our Reach in world</h2>
-            <img src="/map-of-ethiopia.gif" alt="">
+            <!-- Changed to relative path -->
+            <img src="map-of-ethiopia.gif" alt="Map of Ethiopia">
         </div>
     </section>
 
@@ -143,7 +145,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#">Research</a></li>
+                        <li><a href="research/research-and-consultancy.html">Research</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -164,21 +166,22 @@
 
     <script>
         const menuToggle = document.querySelector('.menu-toggle');
-            const navLinks = document.querySelector('.nav-links');
-            
-            menuToggle.addEventListener('click', function() {
-                navLinks.classList.toggle('active');
-                document.getElementById('researchDropdown').addEventListener('change', function() {
-    if (this.value) {
-        console.log(this.value);
-        window.location.href = this.value;
-        console.log('Redirecting to:', this.value);
-    }
-});
-            });
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+        
+        document.getElementById('researchDropdown').addEventListener('change', function() {
+            if (this.value) {
+                window.location.href = this.value;
+            }
+        });
     </script>
-    <script src="/research/js/loader-footer.js"></script>
-    <script src="/research/js/loader-header.js"></script>
-    <script src="/research/js/research.js"></script>
+    
+    <!-- Changed to relative paths -->
+    <script src="research/js/loader-footer.js"></script>
+    <script src="research/js/loader-header.js"></script>
+    <script src="research/js/research.js"></script>
 </body>
 </html>
